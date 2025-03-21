@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFD90F;
+}
+@font-face {
+    font-family: 'simpsonfot';  /* Nombre de la fuente */
+    src: url(simpsonFont.otf)
+}
+
+h1 {
+    font-family: 'simpsonfot', sans-serif;  /* Usa la fuente definida */
+    text-align: center;
+}

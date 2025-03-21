@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Simpson website</title>
+    <!--AQÍ ESTA MI CSS Y BOOPSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <h1 class="borde">The Simpsons <br> WebSite</h1>
+    <div class="container-fluid" style="padding: 0;"> </div>
+        <!-- AQUI VA EL SLIDER-->
+        <div class="row">
+          <div class="col-12">
+              <img src="images/slider.jpeg" alt="" class="w-100">
+          </div>
+      </div>
+    <!-- AQUI VA EL NAV-->
+    
+    
+        <div class="row contenedor">
+            <div class="col-3">
+                <a class="btn btn-1" href="index.html" role="button" onmouseover="playSound('audioHome')"><h2>HOME</h2></a>
+                <audio id="audioHome" src="audios/homeroHome.mp3"></audio>
+            </div>
+            <div class="col-3">
+                <a class="btn btn-2" href="personajes.html" role="button" onmouseover="playSound('audioPersonaje')"><h2>PERSONAJE</h2></a>
+                <audio id="audioPersonaje" src="audios/lisaPersonajes.mp3"></audio>
+            </div>
+            <div class="col-3">
+                <a class="btn btn-3" href="temporadas.html" role="button" onmouseover="playSound('audioTemporada')"><h2>TEMPORADA</h2></a>
+                <audio id="audioTemporada" src="audios/bartTemporadas.mp3"></audio>
+            </div>
+            <div class="col-3">
+                <a class="btn btn-4" href="galeria.html" role="button" onmouseover="playSound('audioGaleria')"><h2>GALERIA</h2></a>
+                <audio id="audioGaleria" src="audios/margeGaleria.mp3"></audio>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- AQUI VA VAN LAS TARJETAS-->
+        <div class="row">
+            <div class="col-4 contenier-imagenes">
+                <div class="card text-bg-dark">
+                    <img src="images/creador.jpeg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">CREADOR</h5>
+                      <p class="card-text parrafo">Matt Groening (1954-)
+                        Caricaturista y creador de Los Simpson, la serie animada más icónica de la televisión. Su estilo satírico y crítica social han marcado generaciones.</p>
+                        <button type="button" class="btn btn-warning tarjetaBoton">¡Encuéntralos aquí!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <img src="images/wallpaper.png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">WALLPAPER</h5>
+                      <p class="card-text parrafo">📺✨ ¡Dale un toque Simpson a tu pantalla! Descarga fondos de pantalla con los colores y personajes icónicos de Los Simpson. 🎉🟡🔵🔴</p>
+                      <button type="button" class="btn btn-warning tarjetaBoton">¡Encuéntralos aquí!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <img src="images/shop.png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">SHOP</h5>
+                      <p class="card-text parrafo">Explora nuestra tienda y descubre camisetas, tazas, accesorios y más, con los diseños más icónicos de Los Simpson. Perfecto para fans de todas las edades. 🟡🔵🔴
+
+                        👕☕🎒 ¡No te quedes sin el tuyo!</p>
+                        <button type="button" class="btn btn-warning tarjetaBoton">¡Encuéntralos aquí!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--AQUI COMIENZA LAS SECCIONES-->
+        <div class="row">
+            <div class="col-6">
+                <div class="card text-bg-danger">
+                    <img src="images/terror.png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                      <h5 class="card-titl terror">🎃👻 ¡Los especiales más escalofriantes de Los Simpson te esperan! 🕷️</h5>
+                      <p class="card-text parrafo2">Revive los icónicos Treehouse of Horror, llenos de parodias, monstruos y el humor más macabro de Springfield. ¡Atrévete a verlos todos!</p>
+                      <button type="button" class="btn btn-warning tarjetaBoton2">Encuéntralos aquí!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="card text-bg-warning ">
+                    <img src="images/navidad.png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                      <h5 class="card-titl navidad"> 🎄🎁 ¡Vive la magia navideña con Los Simpson! ⛄✨</h5>
+                      <p class="card-text parrafo2">Desde caos en la nieve hasta regalos inesperados, disfruta de los episodios más festivos y divertidos. ¡La Navidad amarilla nunca pasa de moda!</p>
+                      <button type="button" class="btn btn-warning tarjetaBoton2">Encuéntralos aquí!</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-12" >
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+                    <div class="datosCuriosos"> <h2> Datos curiosos <br> de los personajes principales</h2></div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/homero.png" class="d-block  " alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Datos curiosos de Homero</h5>
+                          <p>Su IQ es de 55, pero ha sido más inteligente en algunos episodios cuando se ha quitado un crayón del cerebro.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000" >
+                        <img src="images/march.png" class="d-block " alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Dato curioso de Marge Simpson</h5>
+                          <p>Aunque parece la más sensata, ha estado en la cárcel varias veces por delitos menores.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/bart.png" class="d-block " alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Dato curioso de Bard Simpson</h5>
+                          <p>Es el único de la familia que ha ido a la cárcel más de 10 veces.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/lisa.png" class="d-block " alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Dato curioso de Lisa Simpson</h5>
+                          <p>Es el único miembro de la familia con un color de ropa diferente en el opening.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/maggie.png" class="d-block " alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Dato curioso de Marggie Simpson</h5>
+                          <p>En toda la serie, ha dicho solo unas pocas palabras, la más famosa es "¡Papi!" en un episodio.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item videoarana" data-bs-interval="2000">
+                        <video  src="video/puercoarana.mp4" style=" width: 500px;" controls></video>
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Video del puerco araña</h5>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-12">
+
+            </div>
+        </div>
+    
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function playSound(audioId) {
+            var audio = document.getElementById(audioId);
+            audio.play();
+        }
+    </script>
+    
+  </body>
+</html>
